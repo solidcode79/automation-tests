@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* Core settings */
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+
+    /* Enable strict type checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    /* Better Playwright + TS behavior */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    /* Stop JS generation when compiling tests */
+    "noEmit": true,
+
+    /* Helpful for debugging and editor IntelliSense */
+    "allowJs": false,
+    "skipLibCheck": true
+  },
+
+  /* Tell TS which folders contain your test code */
+  "include": [
+    "tests/**/*.ts",
+    "pages/**/*.ts",
+    "playwright.config.ts"
+  ],
+
+  /* Ignore folders we never want TS to scan */
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".playwright"
+  ]
+}
